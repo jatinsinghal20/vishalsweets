@@ -1,0 +1,72 @@
+@keyframes highlight {
+    0% {opacity: 0}
+    100% { opacity: 1}
+}
+
+
+#MyCanvas{
+    border: 1px solid black;
+    height: 17vh;
+    width: inherit;
+}
+
+#Surprise{
+    border: 1px solid black;
+    height:13vh;
+    background: orange;
+}
+
+
+.row{
+    height: 16vh;
+}
+
+#bday{
+    border: 1px solid black;
+    height:10vh;
+    background: orange;
+
+}
+
+.myImage{
+    height: inherit;
+    width: inherit;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.animate{
+    -webkit-animation-name: highlight;
+    -moz-animation-name: highlight;
+    -o-animation-name: highlight;
+    animation-name: highlight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+audio {
+    display:none;
+}
+
+.back{
+    background: url("bg1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#pics{
+    height: 87vh;
+}
+
+.back1{
+    background: url("bg.gif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

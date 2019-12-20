@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="caterers" />
+        <meta name="keywords" content="caterers,vishal,sweets,events,najafgarh,delhi" />
+        <meta name="author" content="ITM" />
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/vsc.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <title>VSC</title>
+
+        <header id="header">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>  
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="home.html">Vishal Sweets Caterers</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="home.html#sectionid">About Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li class="active"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    </head>
+<body>
+        <br>
+        <br>
+        <br>
+
+        <div class = "container">
+            <div class="row">
+                <div class = "col-sm-5 contact lblbck"> 
+                        <h1 class="belleza-h1 ">Contact Us <small class="contact1">Lets get in touch</small></h1>
+                        <h4>Regd. Office : 239, Nawada Bazar, Najafgarh,<br>New Delhi-110043<br></h4>
+                        <h4>Branch Office : 160-A, Old Anaj Mandi,<br>Najafgarh, New Delhi-110043</h4>
+                        <h4><span class="glyphicon glyphicon-earphone"></span>
+                            <abbr title="Phone">Phone</abbr>: (+91) 9213315347, 9717617976, 9990299225
+                        </h4>
+                        <h4><span class="glyphicon glyphicon-envelope"></span>
+                            <abbr  title="Email"> Email</abbr>: <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=vishalmittal1601@gmail.com&amp;su=enter+your+subject&amp;body=queries+and+your+contact" ><strong class="conlink">vishalmittal1601@gmail.com</strong></a>
+                        </h4>
+                </div>
+                <div class= "col-sm-offset-1 col-sm-6">
+                    <div id="map" style="width:100%;height:300px"></div>
+                </div>
+            </div>
+            <hr>
+            <div class="col-lg-6 contact">
+                <form action="mail.php" method="POST" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="contact-name" class="col-lg-2 control-label"><span class="lblbck">Name</span></label>
+                        <div class="col-lg-10">
+                            <input  type="text" class="form-control" id="contact-name" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-phone" class="col-lg-2 control-label"><span class="lblbck">Phone</span></label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="contact-phone" placeholder="Phone">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email" class="col-lg-2 control-label"><span class="lblbck">Email</span></label>
+                        <div class="col-lg-10">
+                            <input type="email" class="form-control" id="contact-email" placeholder="Email address">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message" class="col-lg-2 control-label"><span class="lblbck">Message</span></label>
+                        <div class="col-lg-10">
+                            <textarea name="contact-message" id="contact-message" class="form-control" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-10 col-lg-offset-2">
+                            <button type="submit" class="btn btn-sample">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            function myMap() {
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {
+                    center: new google.maps.LatLng(28.610697, 76.983287),
+                    zoom: 16
+                };
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+                var marker = new google.maps.Marker({position:new google.maps.LatLng(28.610697, 76.983287)});
+                marker.setMap(map);
+            }
+        </script>
+	<script async defer
+  		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5FWT6klM9U5WLCiiwIONMtRtOL8pazNE&callback=myMap">
+	</script>
+       <br>
+        <div class="navbar-static-bottom Footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 FooterHeading"><b>Connect With Us</b></div>
+                    <div class="col-sm-offset-4 col-sm-4">
+                        <a href="https://www.facebook.com/Vishal-Sweets-Caterers-And-Decorators-470756189734983/" class="footer-link"> <div class="col-xs-6 col-sm-4 FooterText">Facebook</div></a>
+                        <a href="http://www.gmail.com" class="footer-link"> <div class="col-xs-6 col-sm-4 FooterText">Google+</div></a>
+                        <a href="contact.html" class="footer-link"><div class="col-xs-6 col-sm-4 FooterText">Contact Us </div></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-12 FooterCopyright">Copyright</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
